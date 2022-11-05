@@ -9,7 +9,7 @@
 
 .bgColor {
 
-    background-color: green;
+    background-color: black;
 
     
     
@@ -85,6 +85,6 @@
 
 @media (max-width: 640px) {
     .text {
-        max-width: 640px;
+        max-width: 300px;
     }
 }
