@@ -2,8 +2,7 @@ const hex = [0,1,2,3,4,5,6,7,8,9,"A","B",'C','D','E','F']
 
 const btn = document.querySelector('.botao');
 const colorName = document.querySelector('.colorName');
-const random = document.querySelector('.change');
-// const hexRandom = document.querySelector('.change1');
+const random = document.querySelectorAll('.change');
 btn.addEventListener("click", function() {
 
     let hexColor = "#"
@@ -15,9 +14,11 @@ btn.addEventListener("click", function() {
     document.body.style.backgroundColor = hexColor;
     colorName.textContent = hexColor;
     colorName.style.color = hexColor;
-    random.style.color = hexColor;
-    document.querySelector('.change1').style.color = hexColor;
-    document.querySelector('#btn').style.color = hexColor;
+    for(let i of random) {
+        i.style.color = hexColor;
+    }
+    
+
 })
 
 function randomColor() {
