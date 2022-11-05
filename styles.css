@@ -81,3 +81,10 @@
 .text h1 {
     text-transform: uppercase;
 }
+
+
+@media (max-width: 640px) {
+    .text {
+        max-width: 640px;
+    }
+}
